@@ -18,7 +18,7 @@ To see more about the original project go to: [The Odin Project](https://www.the
 
 ## Live Demo
 
-[Live Demo Link](#)
+[Live Demo Link](https://raw.githack.com/jubaan/Project-Building-with-Responsive-Design/master/index.html)
 
 ## Authors
 
@@ -30,9 +30,9 @@ To see more about the original project go to: [The Odin Project](https://www.the
 
 👤 **Certil Remy**
 
-- Github: 
-- Twitter: 
-- Linkedin: 
+- Github: [@certilremy](https://github.com/certilremy)
+- Twitter: [@certilremy](https://twitter.com/certilremy)
+- Linkedin: [linkedin](https://www.linkedin.com/in/certilremy/)
 
 ## 🤝 Contributing
 
@@ -43,4 +43,3 @@ Feel free to check the [issues page](https://github.com/jubaan/Project-Building-
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
