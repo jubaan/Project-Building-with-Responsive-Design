@@ -111,7 +111,7 @@ html {
 @media only screen and (min-width: 768px) {
   .main_cover {
     display: grid;
-    grid-template: repeat(2, 1fr) / 67% 33%;
+    grid-template: repeat(2, 1fr) / 66% 34%;
   }
 
   .main_cover_article--big {
@@ -137,7 +137,21 @@ html {
 
   .main_wrapper_latest_articles_art {
     padding: 10px;
-    flex: 0 1 33%;
+    flex: 0 1 33.333%;
+  }
+
+  .main_wrapper_sections .main_wrapper_latest_articles_art {
+    padding: 10px;
+    flex: 0 1 50%;
+  }
+
+  .main_wrapper_latest_articles_art--hidden {
+    display: none;
+  }
+
+  .main_wrapper_funding .main_wrapper_latest_articles_art {
+    padding: 10px;
+    flex: 0 1 33.333%;
   }
 }
 
@@ -149,6 +163,20 @@ html {
   .main_wrapper_latest_articles_art {
     padding: 12px;
     flex: 0 1 25%;
+  }
+
+  .main_wrapper_sections .main_wrapper_latest_articles_art {
+    padding: 10px;
+    flex: 0 1 33.333%;
+  }
+
+  .main_wrapper_funding .main_wrapper_latest_articles_art {
+    padding: 10px;
+    flex: 0 1 25%;
+  }
+
+  .main_wrapper_latest_articles_art--hidden {
+    display: inline-flex;
   }
 }
 
