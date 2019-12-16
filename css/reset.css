@@ -1,5 +1,11 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 nav {
-  height: 96px;
+  height: 80px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -44,7 +50,7 @@ nav {
   max-height: 32px;
   position: relative;
   z-index: 2;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .top-nav li {
@@ -107,11 +113,11 @@ nav {
 }
 
 .menu-icon {
-  display: none;
+  display: block;
   position: relative;
-  height: 48px;
+  height: 16px;
   padding: 16px;
-  width: 48px;
+  width: 16px;
 }
 
 .spacer {
@@ -156,3 +162,104 @@ nav {
   top: 50px;
   background-color: #f42;
 }
+
+/* Cover Section */
+.cover {
+  width: 100%;
+  display: grid;
+  grid-template: repeat(2, 1fr) / 65% 35%;
+  padding: 4px;
+}
+
+.article-big {
+  grid-area: 1 / 1 / 3 / 2;
+  margin: 4px;
+  background:
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Instagrammock-796x417.jpg)
+    center no-repeat;
+  background-size: cover;
+  height: 487.4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.article-big-logo {
+  max-height: 96px;
+  margin: 20px;
+}
+
+.article-small-top {
+  grid-area: 1 / 2 / 2 / 3;
+  margin: 4px;
+  background:
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/1-13-796x417.jpg)
+    center;
+  background-size: cover;
+  height: 239.7px;
+}
+
+.article-small-bottom {
+  grid-area: 2 / 2 / 2 / 3;
+  margin: 4px;
+  background:
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/hacker-sam-796x419.jpg)
+    center;
+  background-size: cover;
+  height: 239.7px;
+}
+
+.article-big .cover-article-info {
+  margin: 20px;
+}
+
+.article-big .article-section {
+  color: white;
+  font-size: 0.87 em;
+}
+
+.article-big .article-title {
+  color: white;
+  font-size: 3.5em;
+}
+
+.article-big .article-info {
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.tiny {
+  margin: 0 10px;
+}
+
+.article-small {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.article-small .cover-article-info {
+  margin: 20px;
+}
+
+.article-small .article-section {
+  color: white;
+  font-size: 0.87 em;
+}
+
+.article-small .article-title {
+  color: white;
+  font-size: 1.75em;
+}
+
+.article-small .article-info {
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+/* ----- END Cover Section ----- */
