@@ -1,361 +1,450 @@
+* {
+  box-sizing: border-box;
+}
 
-  
-  nav {
-    height: 80px;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    overflow: visible;
-    background-color: #fff;
-    z-index: 9999;
-    -webkit-box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
-    box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
-  }
-  
-  .logo {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: red;
-    background-color: #f42;
-    height: 80px;
-    padding: 16px 20px;
-    width: 106px;
-  }
-  
-  .logo img {
-    display: block;
-    height: 16px;
-    position: relative;
-    width: 66px;
-    z-index: 999;
-  }
-  
-  .top-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background: black;
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 32px;
-    max-height: 32px;
-    position: relative;
-    z-index: 2;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  }
-  
-  .top-nav li {
-    display: block;
-    height: 100%;
-    margin-left: 12px;
-  }
-  
-  .top-nav .drop-down {
-    display: none;
-  }
-  
-  .main-nav a {
-    padding: 0 12px;
-    color: #aaa;
-    height: 48px;
-    text-decoration: none;
-    letter-spacing: 0.04em;
-    line-height: 1;
-    font-weight: 100;
-  }
-  
-  .menu-icon a {
-    display: none;
-    position: relative;
-    height: 48px;
-    padding: 16px;
-    width: 48px;
-  }
-  
-  /* .search a {
-    display: block;
-    height: 48px;
-    padding: 16px;
-    width: 48px;
-  } */
-  
-  .top-nav li a {
-    text-decoration: none;
-    color: white;
-  }
-  
-  .top-nav > li:last-of-type {
-    margin-right: 20px;
-  }
-  
-  .top-nav > li:first-of-type {
-    margin-left: 20px;
-  }
-  
-  /* .search {
-    display: block;
-    height: 48px;
-    padding: 16px;
-    width: 48px;
-  } */
-  
-  .search a:hover {
-    color: black;
-  }
-  
-  /* .menu-icon {
-    display: block;
-    position: relative;
-    height: 16px;
-    padding: 16px;
-    width: 16px;
-  } */
-  
-  .spacer {
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-  }
-  
-  .main-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: 48px;
-    border-bottom: 1px solid #eee;
-    list-style: none;
-  }
-  
-  .main-nav a:hover {
-    color: black;
-  }
-  
-  /* .search,
-  .menu-icon { */
-  .search {
-    border-left: solid 1px #eee;
-  }
-  
-  .material-icons {
-    display: block;
-    width: 16px;
-    height: 16px;
-    margin-right: 10px;
-  }
-  
-  .menu-icon span {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    margin-top: -1px;
-    left: 14px;
-    top: 50px;
-    background-color: #f42;
-  }
-  
-  /* Cover Section */
+nav {
+  height: 80px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  overflow: visible;
+  background-color: #fff;
+  z-index: 9999;
+  -webkit-box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: red;
+  background-color: #f42;
+  height: 80px;
+  padding: 16px 20px;
+  width: 106px;
+}
+
+.logo img {
+  display: block;
+  height: 16px;
+  position: relative;
+  width: 66px;
+  z-index: 999;
+}
+
+.top-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: black;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 32px;
+  max-height: 32px;
+  position: relative;
+  z-index: 2;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.top-nav li {
+  display: block;
+  height: 100%;
+  margin-left: 12px;
+}
+
+.top-nav .drop-down {
+  display: none;
+}
+
+.main-nav a {
+  padding: 0 12px;
+  color: #aaa;
+  height: 48px;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  font-weight: 100;
+}
+
+.menu-icon a {
+  display: none;
+  position: relative;
+  height: 48px;
+  padding: 16px;
+  width: 48px;
+}
+
+/* .search a {
+      display: block;
+      height: 48px;
+      padding: 16px;
+      width: 48px;
+    } */
+
+.top-nav li a {
+  text-decoration: none;
+  color: white;
+}
+
+.top-nav > li:last-of-type {
+  margin-right: 20px;
+}
+
+.top-nav > li:first-of-type {
+  margin-left: 20px;
+}
+
+/* .search {
+      display: block;
+      height: 48px;
+      padding: 16px;
+      width: 48px;
+    } */
+
+.search a:hover {
+  color: black;
+}
+
+/* .menu-icon {
+      display: block;
+      position: relative;
+      height: 16px;
+      padding: 16px;
+      width: 16px;
+    } */
+
+.spacer {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 48px;
+  border-bottom: 1px solid #eee;
+  list-style: none;
+}
+
+.main-nav a:hover {
+  color: black;
+}
+
+/* .search,
+    .menu-icon { */
+.search {
+  border-left: solid 1px #eee;
+}
+
+.material-icons {
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.menu-icon span {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: -1px;
+  left: 14px;
+  top: 50px;
+  background-color: #f42;
+}
+
+/* Cover Section */
+.cover {
+  width: 100%;
+  display: grid;
+  grid-template: repeat(2, 1fr) / 65% 35%;
+  padding: 4px;
+}
+
+.article-big {
+  grid-area: 1 / 1 / 3 / 2;
+  margin: 4px;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    linear-gradient(
+      320deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 0) 0%,
+      rgba(241, 62, 67, 1) 100%
+    ),
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Instagrammock-796x417.jpg);
+  background-size: cover;
+  height: 487.4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: start;
+}
+
+.article-big-logo {
+  max-height: 96px;
+  margin: 20px;
+  margin-right: 230px;
+}
+
+.article-small-top {
+  grid-area: 1 / 2 / 2 / 3;
+  margin: 4px;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/1-13-796x417.jpg)
+      center;
+  background-size: cover;
+  height: 239.7px;
+}
+
+.article-small-bottom {
+  grid-area: 2 / 2 / 2 / 3;
+  margin: 4px;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/hacker-sam-796x419.jpg)
+      center;
+  background-size: cover;
+  height: 239.7px;
+}
+
+.article-big .cover-article-info {
+  margin: 20px;
+}
+
+.article-big .article-section {
+  color: white;
+  font-size: 0.87 em;
+}
+
+.article-big .article-title {
+  color: white;
+  font-size: 3.5em;
+}
+
+.article-big .article-info {
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.tiny {
+  margin: 0 10px;
+}
+
+.article-small {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.article-small .cover-article-info {
+  margin: 20px;
+}
+
+.article-small .article-section {
+  color: white;
+  font-size: 0.87 em;
+}
+
+.article-small .article-title {
+  color: white;
+  font-size: 1.75em;
+}
+
+.article-small .article-info {
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+/* ----- END Cover Section ----- */
+
+/* Latest funding */
+
+.funding-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.funding-img {
+  position: relative;
+  top: 80px;
+  left: 0;
+  margin: 10px;
+  height: 56px;
+  width: 56px;
+}
+
+.orange {
+  height: 43.84px;
+  background-color: #f42;
+  align-items: center;
+}
+
+.salmon {
+  background-color: #ffebe7;
+  align-items: center;
+  height: 60.33px;
+}
+
+.salmon-clear {
+  background-color: #fffaf8;
+}
+
+.salmon-clear p {
+  margin: 15px;
+}
+
+.line {
+  border-top: 1px solid #ffcdc2;
+}
+
+/* END Latest Funding */
+
+/* ----- LAtest Articles Section ----- */
+
+.latest-news {
+  margin: 0 auto;
+  margin-bottom: 2em;
+  max-width: 1092px;
+  padding: 24px 20px 0 20px;
+}
+
+.latest-news-headline h2 {
+  margin-bottom: 16px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: red;
+}
+
+.latest-news-headline h2 a {
+  text-decoration: none;
+  color: red;
+}
+
+.list-articles {
+  display: flex;
+  flex: 0 1 auto;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.list-articles li {
+  flex-basis: 22%;
+  margin-bottom: 10px;
+}
+
+.list-articles .post-img {
+  display: block;
+  height: 135px;
+  max-width: 100%;
+  margin-bottom: 8px;
+  background-size: cover;
+  background-image: url(https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2019%2F12%2Fabstract-art-blur-bright-373543.jpg&signature=f6a1e39999459569f25ce5c5fd9ccc52);
+}
+
+.list-articles .title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  margin-bottom: 1px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  text-decoration: none;
+  color: black;
+}
+
+.list-articles .article-info {
+  padding-top: 4px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #aaa;
+}
+
+.list-articles .article-info a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+/* Latest Deals */
+
+.post-img-deals {
+  display: block;
+  height: 135px;
+  max-width: 100%;
+  margin-bottom: 8px;
+  background-size: cover;
+  background-image: url(https://cdnp1.stackassets.com/6c14a9f8eb97934746690af56dfa58f4fe0f4de7/store/21f45a858097668f3c5c0419808ec1f79bb6c68b09295123ebe76d0730e2/sale_24386_primary_image.jpg);
+}
+
+/* END Latest Deals */
+
+@media only screen and (max-width: 768px) {
   .cover {
-    width: 100%;
-    display: grid;
-    grid-template: repeat(2, 1fr) / 65% 35%;
-    padding: 4px;
+    display: block;
   }
-  
+
   .article-big {
-    grid-area: 1 / 1 / 3 / 2;
-    margin: 4px;
-    background:
-      linear-gradient(
-        180deg,
-        rgba(2, 0, 36, 1) 0%,
-        rgba(9, 9, 121, 0) 0%,
-        rgba(0, 0, 0, 1) 100%
-      ),
-      linear-gradient(
-        320deg,
-        rgba(2, 0, 36, 1) 0%,
-        rgba(9, 9, 121, 0) 0%,
-        rgba(241, 62, 67, 1) 100%
-      ),
-      url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Instagrammock-796x417.jpg);
-    background-size: cover;
-    height: 487.4px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    text-align: start;
-  }
-  
-  .article-big-logo {
-    max-height: 96px;
-    margin: 20px;
-    margin-right: 230px;
-  }
-  
-  .article-small-top {
-    grid-area: 1 / 2 / 2 / 3;
-    margin: 4px;
-    background:
-      linear-gradient(
-        180deg,
-        rgba(2, 0, 36, 1) 0%,
-        rgba(9, 9, 121, 0) 0%,
-        rgba(0, 0, 0, 1) 100%
-      ),
-      url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/1-13-796x417.jpg)
-        center;
-    background-size: cover;
-    height: 239.7px;
-  }
-  
-  .article-small-bottom {
-    grid-area: 2 / 2 / 2 / 3;
-    margin: 4px;
-    background:
-      linear-gradient(
-        180deg,
-        rgba(2, 0, 36, 1) 0%,
-        rgba(9, 9, 121, 0) 0%,
-        rgba(0, 0, 0, 1) 100%
-      ),
-      url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/hacker-sam-796x419.jpg)
-        center;
-    background-size: cover;
-    height: 239.7px;
-  }
-  
-  .article-big .cover-article-info {
-    margin: 20px;
-  }
-  
-  .article-big .article-section {
-    color: white;
-    font-size: 0.87 em;
-  }
-  
-  .article-big .article-title {
-    color: white;
-    font-size: 3.5em;
-  }
-  
-  .article-big .article-info {
-    font-size: 1.5em;
-    display: flex;
-    align-items: center;
-    color: white;
-  }
-  
-  .tiny {
-    margin: 0 10px;
-  }
-  
-  .article-small {
+    height: 239.1px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
   }
-  
-  .article-small .cover-article-info {
+
+  .article-big-logo {
+    display: none;
+  }
+
+  .article-big .cover-article-info {
     margin: 20px;
   }
-  
-  .article-small .article-section {
+
+  .article-big .article-section {
     color: white;
     font-size: 0.87 em;
   }
-  
-  .article-small .article-title {
+
+  .article-big .article-title {
     color: white;
     font-size: 1.75em;
   }
-  
-  .article-small .article-info {
+
+  .article-big .article-info {
     font-size: 1em;
     display: flex;
     align-items: center;
     color: white;
   }
-  
-  /* ----- END Cover Section ----- */
-  
-  
-  /* ----- LAtest Articles Section ----- */
-  
-  .latest-news {
-    margin: 0 auto;
-    margin-bottom: 2em;
-    max-width: 1692px;
-    padding: 24px 20px 0 20px;
-  }
-  
-  .latest-news-headline h2 {
-    margin-bottom: 16px;
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 1.1;
-    color: red;
-  }
-  
-  .latest-news-headline h2 a {
-  text-decoration: none;
-  color: red;
-  }
-  
-  .list-articles{
-     display: flex;
-     flex: 0 1 auto;
-     flex-flow: row wrap;
-     justify-content: space-between;
-  }
-
-  .list-articles li {
-      flex-basis: 22%;
-      margin-bottom: 10px;
-      
-  }
-
-
-  
-  .list-articles .post-img{
-    display: block;
-    height: 135px;
-    max-width: 100%;
-    margin-bottom: 8px;
-    background-size: cover;
-    background-image:url(https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2019%2F12%2Fabstract-art-blur-bright-373543.jpg&signature=f6a1e39999459569f25ce5c5fd9ccc52) ;
-  }
-  
-  .list-articles .title{
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 18px;
-    margin-bottom: 1px;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    text-decoration: none;
-    color: black;
-  }
-  
-  
-  .list-articles .article-info{
-    padding-top: 4px;
-    font-size: 14px;
-    line-height: 18px;
-    color: #aaa;
-  }
-  
-  .list-articles .article-info a{
-    color: #aaa;
-    text-decoration: none;
-  }
-  
-  
+}
