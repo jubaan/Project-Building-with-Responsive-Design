@@ -109,6 +109,7 @@ h2 {
 
 .nav_top {
   visibility: hidden;
+  height: 100%;
 }
 
 .nav_top li:first-child {
@@ -119,7 +120,8 @@ h2 {
   margin-right: 20px;
 }
 
-.nav_top_dropdown--hidden {
+.nav_top_dropdown--hidden,
+.nav_bottom--hidden {
   display: none;
 }
 
@@ -235,6 +237,15 @@ h2 {
     height: 48px;
   }
 
+  .nav_bottom--hidden {
+    display: flex;
+    margin: 0 15px;
+  }
+
+  .nav_li--margin {
+    margin: 0 5px;
+  }
+
   .main {
     margin-top: 82px;
   }
@@ -310,6 +321,10 @@ h2 {
     grid-area: 2 / 1 / 2 / 3;
     position: sticky;
     top: 0;
+  }
+
+  .nav_bottom--hidden {
+    display: flex;
   }
 
   .main_wrapper {
