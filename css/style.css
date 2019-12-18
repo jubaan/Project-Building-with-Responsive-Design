@@ -142,7 +142,6 @@ h2 {
 .main_cover {
   max-width: 100%;
   margin: 0 auto;
-  padding: 4px;
 }
 
 .main_cover_article {
@@ -171,6 +170,19 @@ h2 {
       rgba(255, 255, 255, 0) 100%
     ),
     url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/12/blackbox-796x419.jpg)
+      center no-repeat;
+  background-size: cover;
+  height: 267.1px;
+}
+
+.main_cover_article--right-bottom article {
+  background:
+    linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/Sonos-move-300-word-review-796x417.png)
       center no-repeat;
   background-size: cover;
   height: 267.1px;
