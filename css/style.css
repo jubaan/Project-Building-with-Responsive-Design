@@ -245,11 +245,8 @@ main {
 
 .article-big-logo {
   max-height: 96px;
-  width: auto;
+  max-width: 400px;
   margin: 20px;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
 }
 
 .article-small-top {
