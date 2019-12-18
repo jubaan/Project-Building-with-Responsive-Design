@@ -68,10 +68,9 @@ html {
   font-size: 13px;
   background:
     linear-gradient(
-      to bottom,
-      rgba(238, 238, 238, 1) 0%,
-      rgba(255, 255, 255, 0.94) 20%,
-      rgba(255, 255, 255, 0.68) 100%
+      180deg,
+      rgba(244, 244, 244, 1) 0%,
+      rgba(255, 255, 255, 0.04243704317664565) 100%
     );
 }
 
@@ -98,6 +97,7 @@ h2 {
   align-items: center;
   justify-content: center;
   grid-area: 1 / 1 / 2 / 2;
+  box-shadow: 0 10px 19px 0 rgba(0, 0, 0, 0.19);
 }
 
 .nav--inline {
@@ -130,6 +130,7 @@ h2 {
   background: #fff;
   width: 100%;
   height: 48px;
+  box-shadow: 0 10px 19px 0 rgba(0, 0, 0, 0.19);
 }
 
 .main {
@@ -147,6 +148,32 @@ h2 {
 .main_cover_article {
   width: 100%;
   padding: 4px;
+}
+
+.main_cover_article--big article {
+  background:
+    linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/Nintendo-Play-Station-796x417.jpg)
+      center no-repeat;
+  background-size: cover;
+  height: 267.1px;
+}
+
+.main_cover_article--right-top article {
+  background:
+    linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/12/blackbox-796x419.jpg)
+      center no-repeat;
+  background-size: cover;
+  height: 267.1px;
 }
 
 .main_wrapper,
@@ -259,12 +286,30 @@ h2 {
     grid-area: 1 / 1 / 3 / 2;
   }
 
+  .main_cover_article--big article {
+    background:
+      linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/Nintendo-Play-Station-796x417.jpg)
+        center no-repeat;
+    background-size: cover;
+    height: 521px;
+  }
+
   .main_cover_article--right-top {
     grid-area: 1 / 2 / 2 / 3;
   }
 
   .main_cover_article--right-bottom {
     grid-area: 2 / 2 / 3 / 3;
+  }
+
+  .main_cover_article--right-top article,
+  .main_cover_article--right-bottom article {
+    height: 256.5px;
   }
 
   .main_wrapper,
@@ -325,6 +370,24 @@ h2 {
 
   .nav_bottom--hidden {
     display: flex;
+  }
+
+  .main_cover_article--big article {
+    background:
+      linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      linear-gradient(
+        130deg,
+        rgba(255, 68, 34, 1) 0%,
+        rgba(255, 255, 255, 0.04243704317664565) 100%
+      ),
+      url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/Nintendo-Play-Station-796x417.jpg)
+        center no-repeat;
+    background-size: cover;
+    height: 521px;
   }
 
   .main_wrapper {
