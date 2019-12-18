@@ -108,7 +108,7 @@ nav {
 }
 
 .top-nav > li:first-of-type {
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 main {
@@ -562,7 +562,90 @@ main {
 
 /* END Latest Deals */
 
+/* Footer */
+.footer {
+  background: #131313;
+  color: #aaa;
+}
+
+.footer_links {
+  padding: 42px 0 28px 0;
+}
+
+.footer_links_social-media {
+  height: 45px;
+  margin-bottom: 21px;
+}
+
+.footer_links--inline {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_links-tnw-links li a {
+  font-family: "Shentox", Arial, Helvetica, sans-serif;
+}
+
+.footer_wrapper--column {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_copyright_logo {
+  height: 9px;
+  margin: 0 1px;
+}
+
+.footer_copyright {
+  background: #000;
+  padding: 32px 0;
+  line-height: 1.5em;
+}
+
+.footer_copyright span {
+  margin: 0 2.5px;
+}
+
+.footer_copyright b {
+  color: red;
+}
+
+/* END Footer */
+
 @media only screen and (max-width: 1024px) {
+  .logo {
+    display: flex;
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top-nav,
+  .main-nav {
+    margin-left: 106px;
+  }
+
+  .article-big {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(9, 9, 121, 0) 0%,
+        rgba(0, 0, 0, 1) 100%
+      ),
+      url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/1-13-796x417.jpg)
+        center no-repeat;
+    background-size: cover;
+  }
+
+  .article-big-logo {
+    visibility: hidden;
+  }
+
   .list-articles {
     justify-content: flex-start;
   }
@@ -596,6 +679,18 @@ main {
 }
 
 @media only screen and (max-width: 768px) {
+  nav {
+    height: 48px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .logo {
+    height: 48px;
+  }
+
   .cover {
     display: block;
   }
@@ -656,5 +751,12 @@ main {
   .list-articles .deals-li {
     flex: 0 1 100%;
     margin: 10px;
+  }
+
+  .footer_wrapper--column {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
   }
 }
