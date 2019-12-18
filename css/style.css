@@ -584,8 +584,19 @@ main {
   justify-content: center;
 }
 
+.footer_links_social-media li i {
+  margin: 10px;
+  color: white;
+}
+
+.footer_links-tnw-links li {
+  margin: 5px;
+}
+
 .footer_links-tnw-links li a {
   font-family: "Shentox", Arial, Helvetica, sans-serif;
+  color: #aaa;
+  text-decoration: none;
 }
 
 .footer_wrapper--column {
