@@ -191,7 +191,8 @@ main {
 .article-big {
   grid-area: 1 / 1 / 3 / 2;
   margin: 4px;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(2, 0, 36, 1) 0%,
       rgba(9, 9, 121, 0) 0%,
@@ -222,7 +223,8 @@ main {
 .article-small-top {
   grid-area: 1 / 2 / 2 / 3;
   margin: 4px;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(2, 0, 36, 1) 0%,
       rgba(9, 9, 121, 0) 0%,
@@ -237,7 +239,8 @@ main {
 .article-small-bottom {
   grid-area: 2 / 2 / 2 / 3;
   margin: 4px;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(2, 0, 36, 1) 0%,
       rgba(9, 9, 121, 0) 0%,
@@ -320,6 +323,10 @@ main {
   width: 56px;
 }
 
+.funding-li li {
+  margin-top: -80px;
+}
+
 .orange {
   height: 43.84px;
   background-color: #f42;
@@ -376,7 +383,7 @@ main {
 }
 
 .list-articles li {
-  flex-basis: 22%;
+  flex: 0 1 22%;
   margin-bottom: 10px;
 }
 
@@ -412,66 +419,17 @@ main {
   text-decoration: none;
 }
 
-/* Latest Deals */
-
-.post-img-deals {
-  display: block;
-  height: 135px;
-  max-width: 100%;
-  margin-bottom: 8px;
-  background-size: cover;
-  background-image: url(https://cdnp1.stackassets.com/6c14a9f8eb97934746690af56dfa58f4fe0f4de7/store/21f45a858097668f3c5c0419808ec1f79bb6c68b09295123ebe76d0730e2/sale_24386_primary_image.jpg);
-}
-
-/* END Latest Deals */
-
-@media only screen and (max-width: 768px) {
-  .cover {
-    display: block;
-  }
-
-  .article-big {
-    height: 239.1px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
-
-  .article-big-logo {
-    display: none;
-  }
-
-  .article-big .cover-article-info {
-    margin: 20px;
-  }
-
-  .article-big .article-section {
-    color: white;
-    font-size: 0.87 em;
-  }
-
-  .article-big .article-title {
-    color: white;
-    font-size: 1.75em;
-  }
-
-  .article-big .article-info {
-    font-size: 1em;
-    display: flex;
-    align-items: center;
-    color: white;
-  }
-}
+/* all sections */
 
 .big-col-wrapper {
   display: flex;
   flex-flow: row wrap;
-  max-width: 1180px;
+  max-width: 1092px;
   margin: 0 auto;
 }
 
 .section-details {
-  flex-basis: 30%;
+  flex: 0 1 33.333%;
   max-width: 100%;
   padding: 8px 20px;
   margin: 0;
@@ -527,7 +485,7 @@ main {
 }
 
 .section-details .litle-link {
-  list-style:disc ;
+  list-style: disc;
   color: #f42;
 }
 
@@ -587,4 +545,116 @@ main {
 .section-details .second-latest-article .img-side {
   width: 90px;
   height: 100%;
+}
+
+/* END all sections */
+
+/* Latest Deals */
+
+.post-img-deals {
+  display: block;
+  height: 135px;
+  max-width: 100%;
+  margin-bottom: 8px;
+  background-size: cover;
+  background-image: url(https://cdnp1.stackassets.com/6c14a9f8eb97934746690af56dfa58f4fe0f4de7/store/21f45a858097668f3c5c0419808ec1f79bb6c68b09295123ebe76d0730e2/sale_24386_primary_image.jpg);
+}
+
+/* END Latest Deals */
+
+@media only screen and (max-width: 1024px) {
+  .list-articles {
+    justify-content: flex-start;
+  }
+
+  .list-articles .latest-li {
+    flex: 0 1 30.3%;
+    margin: 10px;
+  }
+
+  .funding-li li {
+    flex: 0 1 30.33%;
+    margin: 1%;
+    margin-top: -80px;
+  }
+
+  #visnone {
+    display: none;
+  }
+
+  .section-details {
+    flex: 0 1 50%;
+    max-width: 100%;
+    padding: 8px 20px;
+    margin: 0;
+  }
+
+  .list-articles .deals-li {
+    flex: 0 1 30.33%;
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cover {
+    display: block;
+  }
+
+  .article-big {
+    height: 239.1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .article-big-logo {
+    display: none;
+  }
+
+  .article-big .cover-article-info {
+    margin: 20px;
+  }
+
+  .article-big .article-section {
+    color: white;
+    font-size: 0.87 em;
+  }
+
+  .article-big .article-title {
+    color: white;
+    font-size: 1.75em;
+  }
+
+  .article-big .article-info {
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+
+  .list-articles {
+    justify-content: flex-start;
+  }
+
+  .list-articles .latest-li {
+    flex: 0 1 100%;
+  }
+
+  .funding-li li {
+    flex: 0 1 100%;
+    margin: 1%;
+    margin-top: -80px;
+  }
+
+  .section-details {
+    flex: 0 1 100%;
+    max-width: 100%;
+    padding: 8px 20px;
+    margin: 0;
+  }
+
+  .list-articles .deals-li {
+    flex: 0 1 100%;
+    margin: 10px;
+  }
 }
