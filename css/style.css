@@ -61,18 +61,6 @@ nav {
   margin-left: 12px;
 }
 
-.section-details h2 a {
-  color: #f42;
-  text-decoration: none;
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 1.1;
-}
-
-.top-nav .drop-down {
-  display: none;
-}
-
 .main-nav a {
   padding: 0 12px;
   color: #aaa;
@@ -91,6 +79,18 @@ nav {
   width: 48px;
 }
 
+.section-details h2 a {
+  color: #f42;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.top-nav .drop-down {
+  display: none;
+}
+
 /* .search a {
       display: block;
       height: 48px;
@@ -103,6 +103,19 @@ nav {
   color: white;
 }
 
+.footer_links-tnw-links li {
+  margin: 5px;
+}
+
+.list-articles li {
+  flex: 0 1 22%;
+  margin-bottom: 10px;
+}
+
+.funding-li li {
+  margin-top: -80px;
+}
+
 .top-nav > li:last-of-type {
   margin-right: 20px;
 }
@@ -113,6 +126,17 @@ nav {
 
 main {
   z-index: 1;
+}
+
+.footer_links-tnw-links li a {
+  font-family: "Shentox", Arial, Helvetica, sans-serif;
+  color: #aaa;
+  text-decoration: none;
+}
+
+.latest-news-headline h2 a {
+  text-decoration: none;
+  color: red;
 }
 
 /* .search {
@@ -186,6 +210,11 @@ main {
   display: grid;
   grid-template: repeat(2, 1fr) / 65% 35%;
   padding: 4px;
+}
+
+.hidden-title {
+  display: none;
+  opacity: 0;
 }
 
 .article-big {
@@ -323,10 +352,6 @@ main {
   width: 56px;
 }
 
-.funding-li li {
-  margin-top: -80px;
-}
-
 .orange {
   height: 43.84px;
   background-color: #f42;
@@ -370,21 +395,11 @@ main {
   color: red;
 }
 
-.latest-news-headline h2 a {
-  text-decoration: none;
-  color: red;
-}
-
 .list-articles {
   display: flex;
   flex: 0 1 auto;
   flex-flow: row wrap;
   justify-content: space-between;
-}
-
-.list-articles li {
-  flex: 0 1 22%;
-  margin-bottom: 10px;
 }
 
 .list-articles .post-img {
@@ -589,16 +604,6 @@ main {
   color: white;
 }
 
-.footer_links-tnw-links li {
-  margin: 5px;
-}
-
-.footer_links-tnw-links li a {
-  font-family: "Shentox", Arial, Helvetica, sans-serif;
-  color: #aaa;
-  text-decoration: none;
-}
-
 .footer_wrapper--column {
   display: flex;
   flex-flow: row nowrap;
@@ -736,6 +741,27 @@ main {
     display: flex;
     align-items: center;
     color: white;
+  }
+
+  .small-screen {
+    display: grid;
+    grid-template: 1fr 2fr / 30% 70%;
+    width: 100%;
+  }
+
+  .small-screen .post-img,
+  .small-screen .post-img-deals {
+    grid-area: 1 / 1 / 3 / 2;
+  }
+
+  .small-screen h4 {
+    grid-area: 1 / 2 / 3 / 2;
+    margin-left: 20px;
+  }
+
+  .small-screen .article-info {
+    grid-area: 2 / 2 / 3 / 3;
+    margin-left: 20px;
   }
 
   .list-articles {
