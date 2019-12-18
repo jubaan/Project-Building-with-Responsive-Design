@@ -74,9 +74,12 @@ nav {
 .menu-icon a {
   display: none;
   position: relative;
+  top: -5px;
+  right: 10px;
   height: 48px;
   padding: 16px;
   width: 48px;
+  color: orangered;
 }
 
 .section-details h2 a {
@@ -90,13 +93,6 @@ nav {
 .top-nav .drop-down {
   display: none;
 }
-
-/* .search a {
-      display: block;
-      height: 48px;
-      padding: 16px;
-      width: 48px;
-    } */
 
 .top-nav li a {
   text-decoration: none;
@@ -139,24 +135,9 @@ main {
   color: red;
 }
 
-/* .search {
-      display: block;
-      height: 48px;
-      padding: 16px;
-      width: 48px;
-    } */
-
 .search a:hover {
   color: black;
 }
-
-/* .menu-icon {
-      display: block;
-      position: relative;
-      height: 16px;
-      padding: 16px;
-      width: 16px;
-    } */
 
 .spacer {
   -webkit-box-flex: 1;
@@ -287,7 +268,7 @@ main {
 
 .article-big .article-section {
   color: white;
-  font-size: 0.87 em;
+  font-size: 0.87em;
 }
 
 .article-big .article-title {
@@ -318,7 +299,7 @@ main {
 
 .article-small .article-section {
   color: white;
-  font-size: 0.87 em;
+  font-size: 0.87em;
 }
 
 .article-small .article-title {
@@ -452,7 +433,7 @@ main {
 
 .section-details .first-article {
   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/JBL-Reflect-Eternal-hed-368x276.jpg);
-  background-size: 100% 100% cover;
+  background-size: cover;
   width: 100%;
   position: relative;
   height: 30%;
@@ -699,6 +680,10 @@ main {
     height: 48px;
   }
 
+  .menu-icon a {
+    display: inline-block;
+  }
+
   .hidden {
     display: none;
   }
@@ -728,7 +713,7 @@ main {
 
   .article-big .article-section {
     color: white;
-    font-size: 0.87 em;
+    font-size: 0.87em;
   }
 
   .article-big .article-title {
@@ -795,5 +780,26 @@ main {
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
+  }
+}
+
+@media only screen and (width: 480px) {
+  #surprise-for-reviewers {
+    display: flex !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    background-image: url(https://image.freepik.com/free-vector/merry-christmas-decorative-vintage-background_23-2147702809.jpg);
+    background-position: center;
+    background-size: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    color: white;
   }
 }
