@@ -88,7 +88,7 @@ h2 {
 }
 
 .nav_logo {
-  background-color: #f42;
+  background: #f42;
   background: linear-gradient(to bottom right, #c09, #f42 85%);
   width: 106px;
   padding: 16px 20px;
@@ -108,7 +108,7 @@ h2 {
 }
 
 .nav_top {
-  visibility: hidden;
+  display: none;
   height: 100%;
 }
 
@@ -265,7 +265,7 @@ h2 {
   }
 
   .nav_top {
-    visibility: visible;
+    display: flex;
     height: 32px;
     width: 100%;
     background: #000;
