@@ -1,16 +1,16 @@
 # Project-Building-with-Responsive-Design
 
-In this project, you’ll get the chance to build a responsive website. We’ll be cloning The Next Web, a tech-focused magazine which uses media queries to gracefully degrade their site as the window size is reduced. 
+In this project, we got the chance to build a responsive website. We clone The Next Web, a tech-focused magazine which uses media queries to gracefully degrade their site as the window size is reduced. The goal was to set up the layout and use the media queries to mimic The Next Web website.
 
 To see more about the original project go to: [The Odin Project](https://www.theodinproject.com/courses/html5-and-css3/lessons/building-with-responsive-design?ref=lnav)
 
-- Original Website 
+- Original Website
 
-![The Next Web](#)
+![The Next Web](./img/tnw.jpg)
 
 - Our Solution
 
-![Our Solution](#)
+![Our Solution](./img/responsiveProject.png)
 
 ## Built With
 
@@ -18,7 +18,7 @@ To see more about the original project go to: [The Odin Project](https://www.the
 
 ## Live Demo
 
-[Live Demo Link](#)
+[Live Demo Link](https://raw.githack.com/jubaan/Project-Building-with-Responsive-Design/main-feature/index.html)
 
 ## Authors
 
@@ -30,9 +30,9 @@ To see more about the original project go to: [The Odin Project](https://www.the
 
 👤 **Certil Remy**
 
-- Github: 
-- Twitter: 
-- Linkedin: 
+- Github:
+- Twitter:
+- Linkedin:
 
 ## 🤝 Contributing
 
@@ -43,4 +43,3 @@ Feel free to check the [issues page](https://github.com/jubaan/Project-Building-
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
